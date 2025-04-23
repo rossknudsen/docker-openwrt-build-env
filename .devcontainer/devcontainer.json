@@ -1,0 +1,19 @@
+{
+	"build": {
+		"dockerfile": "../Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash"
+			},
+			"extensions": [
+				"mhutchie.git-graph",
+				"ms-vscode.vs-keybindings",
+				"ms-vscode.makefile-tools",
+				"ms-vscode.cpptools-extension-pack"
+			]
+		}
+	},
+	"postStartCommand": ".devcontainer/post-start.sh"
+}
