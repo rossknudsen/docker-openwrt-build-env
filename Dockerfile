@@ -1,4 +1,5 @@
-FROM alpine:edge
+# Need this version if we have to have Python 2.x
+FROM alpine:3.15
 
 RUN apk add git build-base bash ncurses-dev perl tar findutils patch coreutils gawk grep unzip bzip2 wget python2 python3 curl diffutils bsd-compat-headers less diffutils zlib-dev file sudo rsync && \
     addgroup -S user && \
